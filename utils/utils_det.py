@@ -229,10 +229,9 @@ def plot_picks(xr,picks,time_deci=1,space_deci=1,sat = 50,size = 0.3, save_name 
 
 
 def associate(da, phasenet_picks, model_string, gamma_picks, prob_thresh = 0.0, plot = False):
-    if not os.path.exists(gamma_picks):
-        os.mkdir(gamma_picks)
-        
-    station_df = pd.read_csv('tito_ch2_geometry_gl_40.csv')
+    
+    os.makedirs(gamma_picks, exist_ok=True)    
+    station_df = pd.read_csv('utils/tito_ch2_geometry_gl_40.csv')
     #correct station name
     station_df["id"] = np.arange(len(station_df)).astype(str)
         
