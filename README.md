@@ -31,4 +31,6 @@ Location analysis with NLLoc is performed in:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/francescosdu/DAS_single_station_workflow/blob/main/02_location_analysis.ipynb)
 
-This notebook uss the arrival times obtained from the integration of PhaseNet and GaMMA and determines the hypocentral coordinates with NLLoc (Lomax et al. 2000). The final location and the resulting PDF is displayed against the reference hypocentral location from INFO, along with location uncertainties and quality metrics. 
+This notebook uss the arrival times obtained from the integration of PhaseNet and GaMMA and determines the hypocentral coordinates with NLLoc (Lomax et al. 2000) using an interpolated 1D velocity model for the Irpinia region. The final location and the resulting PDF is displayed against the reference hypocentral location from INFO, along with location uncertainties and quality metrics.
+
+NOTE: Before proceeding with earthquake location, travel-time grids have to be computed using "generate_NLLoc_grid.sh". P and S travel-time grid requires ~90GB of storage
