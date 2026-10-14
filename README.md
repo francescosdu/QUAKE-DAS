@@ -30,3 +30,5 @@ Location analysis with NLLoc is performed in:
 `02_location_analysis.ipynb`
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/francescosdu/DAS_single_station_workflow/blob/main/02_location_analysis.ipynb)
+
+This notebook uss the arrival times obtained from the integration of PhaseNet and GaMMA and determines the hypocentral coordinates with NLLoc (Lomax et al. 2000). The final location and the resulting PDF is displayed against the reference hypocentral location from INFO, along with location uncertainties and quality metrics. 
