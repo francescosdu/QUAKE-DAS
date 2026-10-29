@@ -12,6 +12,8 @@ The workflow integrates:
 We suggest using a python version >= 3.11. Install the Python dependencies with:
 
 ```bash
+git clone https://github.com/francescosdu/QUAKE-DAS.git  
+cd QUAKE-DAS  
 pip install -r requirements.txt
 ```
 
